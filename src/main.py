@@ -11,35 +11,33 @@ from guion_gen import generar_guion
 from image_gen import generar_imagen
 from tts_gen import generar_audio
 from render import renderizar_escena, concatenar_escenas
-
-TEMAS_PLANETA = [
-    "el abismo de Challenger y su profundidad exacta",
-    "el hongo gigante de Oregón como el ser vivo más grande del mundo",
-    "el supervolcán inactivo bajo el parque de Yellowstone",
-    "el punto Nemo y su lejanía extrema de cualquier masa terrestre",
-    "la anomalía magnética del Atlántico Sur y su efecto en satélites",
-    "el pozo superprofundo de Kola en Rusia",
-    "el lago Hillier en Australia y el origen biológico de su color rosa",
-    "el río hirviente de la Amazonía peruana",
-    "el monte Roraima y sus especies endémicas aisladas",
-    "la puerta del infierno de Darvaza ardiendo en Turkmenistán",
-    "el glaciar de sangre en la Antártida",
-    "las piedras navegantes que se mueven solas en el Valle de la Muerte",
-    "la cueva de los cristales gigantes de Naica en México",
-    "el bosque torcido de Gryfino en Polonia",
-    "la cascada de fuego estacional del parque Yosemite",
-    "el lago de lava permanente del monte Nyiragongo",
-    "la presión extrema y las especies abisales de la fosa de las Marianas",
-    "el ojo del Sahara o estructura de Richat visible desde el espacio",
-    "el fenómeno inexplicado de las luces de Hessdalen en Noruega",
-    "el desierto de Atacama como el lugar no polar más seco del planeta",
-    "el cráter de Vredefort como el mayor impacto de meteorito registrado",
-    "la isla de Socotra y su flora con apariencia alienígena",
-    "el origen real del sonido de baja frecuencia 'The Bloop' en el océano",
-    "la Gran Barrera de Coral como la estructura viva más grande de la Tierra",
-    "el movimiento tectónico que está partiendo África en el valle del Rift",
+TEMAS_POR_DEFECTO = [
+    "el fallo de ingeniería del rodamiento IMS en Porsche",
+    "por qué los motores diésel de camión pueden entrar en retroalimentación o runaway",
+    "el peligro mortal del fenómeno shimmy o death wobble en motos",
+    "el peor error de diseño del Ford Pinto y su depósito explosivo",
+    "cómo funciona el freno de motor Jake Brake en los camiones pesados",
+    "el motivo por el que se prohibieron los motores de 2 tiempos en MotoGP",
+    "por qué nunca debes apagar de golpe un motor turbo tras exigirle potencia",
+    "el desastre de las correas de distribución bañadas en aceite PureTech",
+    "la razón técnica por la que los camiones tienen tantas marchas",
+    "el fallo catastrófico del cambio DSG de 7 velocidades en seco",
+    "por qué el embrague en seco de las Ducati suena a roto",
+    "qué le ocurre a tu motor si te equivocas de marcha y haces un money shift",
+    "el secreto de los turbos de geometría variable y por qué se atascan",
+    "por qué los motores rotativos Wankel de Mazda consumen tanto aceite",
+    "el peligro de los frenos de aire en camiones cuando pierden presión",
+    "la verdad oculta detrás de la válvula EGR y la carbonilla en el motor",
+    "por qué los frenos cerámicos chirrían tanto a baja velocidad",
+    "el fallo de diseño que hacía volcar al Mercedes Clase A original",
+    "cómo funciona el cambio Quickshifter en motos sin usar embrague",
+    "por qué los camiones usan llantas con tantas tuercas y flechas indicadoras",
+    "el colapso de los motores V8 Northstar de Cadillac por los tornillos de culata",
+    "qué es la hidrolimpieza o hydro-locking y cómo un charco dobla bielas",
+    "por qué las motos de cross modernas requieren cambiar pistón por horas de uso",
+    "el peligro oculto de la regeneración del filtro de partículas DPF/FAP",
+    "el motor indestructible Mercedes OM617 que superaba el millón de kilómetros",
 ]
-
 
 def ejecutar(tema: str, subir: bool) -> None:
     print(f"Generando guion sobre: {tema}")
